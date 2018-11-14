@@ -20,6 +20,7 @@ type Bot interface {
 // Message is the interface implemented by an object that contains an individual
 // chat message as well as the meta-data associated with that chat message.
 type Message interface {
+	ID() string
 	Body() string
 	From() string
 	Room() string
